@@ -1,0 +1,71 @@
+<!DOCTYPE html><html lang="ko" data-lang="ko" data-page="404"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>404 — Hellen Choo 추혜인</title><meta name="description" content="추혜인(Hellen Choo)은 서울에서 작업하는 화가다. 회화, 판화, 네온 작품과 전시 이력. Hellen Choo, a painter based in Seoul — paintings, prints and neon."><link rel="canonical" href="https://hellenchoo.com/404/"><meta property="og:type" content="website"><meta property="og:title" content="404 — Hellen Choo 추혜인"><meta property="og:description" content="추혜인(Hellen Choo)은 서울에서 작업하는 화가다. 회화, 판화, 네온 작품과 전시 이력. Hellen Choo, a painter based in Seoul — paintings, prints and neon."><meta property="og:url" content="https://hellenchoo.com/404/"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#f4f2ec"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141414'/%3E%3Cpath d='M14 40c8-14 14 8 22-6s10-8 14-2' fill='none' stroke='%23f4f2ec' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E"><script>
+      (function () {
+        var d = document.documentElement;
+        d.classList.add('js');
+        var l = null;
+        try { l = localStorage.getItem('hc-lang'); } catch (e) {}
+        if (!l) l = (navigator.language || 'ko').toLowerCase().indexOf('ko') === 0 ? 'ko' : 'en';
+        d.dataset.lang = l;
+        d.lang = l;
+        // 스크립트가 끝내 뜨지 않으면 숨겨 둔 그림을 그대로 보여 준다
+        setTimeout(function () { if (!d.classList.contains('booted')) d.classList.remove('js'); }, 7000);
+      })();
+    </script><link rel="expect" href="#page-end" blocking="render"><script>
+      // 문서 간 전환: 목록의 썸네일과 상세의 대표 이미지를 같은 이름(art)으로 묶어 이어지게 한다
+      (function () {
+        var re = /\/works\/([^\/?#]+)\/?(?:[?#].*)?$/;
+        function inView(el) { var r = el.getBoundingClientRect(); return r.bottom > 0 && r.top < innerHeight && r.width > 0; }
+        function name(el, vt) {
+          if (!el) return;
+          el.style.viewTransitionName = 'art';
+          vt.finished.finally(function () { el.style.viewTransitionName = ''; });
+        }
+        function main() { return document.querySelector('.wd-art img:not(.ld-full)'); }
+        addEventListener('pageswap', function (e) {
+          if (!e.viewTransition || !e.activation || !e.activation.entry) return;
+          var m = e.activation.entry.url.match(re);
+          if (m) {
+            var el = document.querySelector('[data-vt="' + m[1] + '"]');
+            if (el && inView(el)) name(el, e.viewTransition);
+          } else {
+            var mm = main();
+            if (mm) name(mm, e.viewTransition);
+          }
+        });
+        addEventListener('pagereveal', function (e) {
+          if (!e.viewTransition) return;
+          document.documentElement.classList.add('vt-in');
+          var mm = main();
+          if (mm) return name(mm, e.viewTransition);
+          var nav = window.navigation;
+          var from = nav && nav.activation && nav.activation.from && nav.activation.from.url;
+          var m = from && from.match(re);
+          if (m) {
+            var el = document.querySelector('[data-vt="' + m[1] + '"]');
+            if (el && inView(el)) name(el, e.viewTransition);
+          }
+        });
+      })();
+    </script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Hellen Choo","alternateName":["추혜인","Hye In Hellen Choo"],"jobTitle":"Painter","url":"https://hellenchoo.com/","sameAs":["https://www.instagram.com/hellenchoopaintings/"],"alumniOf":["Rhode Island School of Design","Hongik University"]}</script><link rel="stylesheet" href="/_astro/Base.DK4h1p8y.css"><style>.nf[data-astro-cid-ibpinaeu]{min-height:100vh;padding-top:var(--nav-h);flex-direction:column;justify-content:center;display:flex;position:relative}.nf-line[data-astro-cid-ibpinaeu]{pointer-events:none;width:100%;height:30vh;position:absolute;top:18%;left:0;right:0}.nf-line[data-astro-cid-ibpinaeu] path[data-astro-cid-ibpinaeu]{fill:none;stroke:var(--fg);stroke-width:1.5px;vector-effect:non-scaling-stroke;stroke-dasharray:3000;stroke-dashoffset:3000px;animation:nf 3.2s var(--ease-out) forwards}@keyframes nf{to{stroke-dashoffset:0}}.nf-t[data-astro-cid-ibpinaeu]{margin:10px 0 24px;font-size:clamp(56px,9vw,160px)}
+</style></head><body><a class="skip" href="#main">본문으로 / Skip to content</a><header class="nav" data-nav data-astro-cid-wpvy4v7s><a class="wm" href="/" aria-label="Hellen Choo — 홈" data-astro-cid-wpvy4v7s><span class="wm-en serif" data-astro-cid-wpvy4v7s>Hellen Choo</span><span class="wm-ko" data-astro-cid-wpvy4v7s>추혜인</span></a><nav class="links" aria-label="주 메뉴" data-astro-cid-wpvy4v7s><a class="ulink" href="/drawing/" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">선드로잉</span><span data-l="en" lang="en">Drawing</span></a><a class="ulink" href="/painting/" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">회화</span><span data-l="en" lang="en">Painting</span></a><a class="ulink" href="/neon/" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">네온</span><span data-l="en" lang="en">Neon</span></a><a class="ulink" href="/prints/" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">판화</span><span data-l="en" lang="en">Prints</span></a><a class="ulink" href="/exhibitions/" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">전시</span><span data-l="en" lang="en">Exhibitions</span></a><a class="ulink" href="/about/" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">소개</span><span data-l="en" lang="en">About</span></a><a class="ulink" href="/contact/" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">연락</span><span data-l="en" lang="en">Contact</span></a></nav><div class="tools" data-astro-cid-wpvy4v7s><button class="lang" type="button" data-lang-toggle aria-label="언어 바꾸기 / Switch language" data-astro-cid-wpvy4v7s><span class="lk" data-astro-cid-wpvy4v7s>KO</span><span class="sep" data-astro-cid-wpvy4v7s>/</span><span class="le" data-astro-cid-wpvy4v7s>EN</span></button><button class="menu-btn" type="button" data-menu-open aria-expanded="false" aria-controls="menu" data-astro-cid-wpvy4v7s><span class="bars" aria-hidden="true" data-astro-cid-wpvy4v7s><i data-astro-cid-wpvy4v7s></i><i data-astro-cid-wpvy4v7s></i></span><span class="sr-only" data-astro-cid-wpvy4v7s>메뉴</span></button></div></header><div class="menu" id="menu" data-menu hidden data-astro-cid-wpvy4v7s><nav aria-label="모바일 메뉴" data-astro-cid-wpvy4v7s><a href="/drawing/" style="--i:0" data-astro-cid-wpvy4v7s><span class="n" data-astro-cid-wpvy4v7s>01</span><span class="serif t" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">선드로잉</span><span data-l="en" lang="en">Drawing</span></span></a><a href="/painting/" style="--i:1" data-astro-cid-wpvy4v7s><span class="n" data-astro-cid-wpvy4v7s>02</span><span class="serif t" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">회화</span><span data-l="en" lang="en">Painting</span></span></a><a href="/neon/" style="--i:2" data-astro-cid-wpvy4v7s><span class="n" data-astro-cid-wpvy4v7s>03</span><span class="serif t" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">네온</span><span data-l="en" lang="en">Neon</span></span></a><a href="/prints/" style="--i:3" data-astro-cid-wpvy4v7s><span class="n" data-astro-cid-wpvy4v7s>04</span><span class="serif t" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">판화</span><span data-l="en" lang="en">Prints</span></span></a><a href="/exhibitions/" style="--i:4" data-astro-cid-wpvy4v7s><span class="n" data-astro-cid-wpvy4v7s>05</span><span class="serif t" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">전시</span><span data-l="en" lang="en">Exhibitions</span></span></a><a href="/about/" style="--i:5" data-astro-cid-wpvy4v7s><span class="n" data-astro-cid-wpvy4v7s>06</span><span class="serif t" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">소개</span><span data-l="en" lang="en">About</span></span></a><a href="/contact/" style="--i:6" data-astro-cid-wpvy4v7s><span class="n" data-astro-cid-wpvy4v7s>07</span><span class="serif t" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">연락</span><span data-l="en" lang="en">Contact</span></span></a><p class="menu-extra" data-astro-cid-wpvy4v7s><a class="ulink" href="/works/" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">전체 작품</span><span data-l="en" lang="en">All works</span></a><a class="ulink" href="/news/" data-astro-cid-wpvy4v7s><span data-l="ko" lang="ko">소식</span><span data-l="en" lang="en">News</span></a></p></nav><svg class="menu-line" viewBox="0 0 400 60" preserveAspectRatio="none" aria-hidden="true" data-astro-cid-wpvy4v7s><path d="M2 40 C 60 10, 90 55, 150 32 S 260 8, 300 34 S 370 50, 398 20" data-astro-cid-wpvy4v7s></path></svg></div><main id="main"><section class="nf wrap" data-astro-cid-ibpinaeu><svg class="nf-line" viewBox="0 0 1200 300" preserveAspectRatio="none" aria-hidden="true" data-astro-cid-ibpinaeu><path d="M-10 210 C 120 60, 220 290, 360 170 S 560 40, 640 160 S 800 300, 900 150 S 1080 60, 1210 120" data-astro-cid-ibpinaeu></path></svg><p class="label" data-astro-cid-ibpinaeu>404</p><h1 class="display nf-t" data-astro-cid-ibpinaeu><span data-l="en" data-astro-cid-ibpinaeu>Page not found</span><span data-l="ko" data-astro-cid-ibpinaeu>페이지를 찾을 수 없습니다</span></h1><p class="mute" data-astro-cid-ibpinaeu><span data-l="ko" lang="ko">예전 hellenchoo.com 주소로 들어오셨다면 새 주소로 연결됩니다.</span><span data-l="en" lang="en">If you followed a link to the old hellenchoo.com, you will be redirected.</span></p><p data-astro-cid-ibpinaeu><a class="btn" href="/works/" data-astro-cid-ibpinaeu><span data-l="ko" lang="ko">작품 보러 가기</span><span data-l="en" lang="en">Go to works</span></a></p></section></main><div id="page-end"></div><canvas class="cursor-canvas" aria-hidden="true"></canvas><div class="cursor-tag" aria-hidden="true"></div><script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.CkgvFtHT.js"></script></body></html><script>(function(){const base = "";
+
+  // 옛 워드프레스 주소를 새 주소로 옮긴다
+  (function () {
+    var p = location.pathname.replace(base, '');
+    var map = { '1285': 'love-2', '1289': 'love-and-barcelona', '1292': 'miel', reconcillation: 'reconciliation', 'seoul-blues-2': 'seoul-blues-neon', 'barcelona-ronda-iceland-2': 'barcelona-ronda-iceland-neon' };
+    var m = p.match(/^\/portfolio\/([^\/]+)\/?$/);
+    var to = null;
+    if (m) to = '/works/' + (map[m[1]] || m[1]) + '/';
+    var c = p.match(/^\/portfolio_category\/([^\/]+)/);
+    if (c) to = '/works/?c=' + ({ paintings: 'painting', 'neon-paintings': 'neon', 'prints-and-drawings': 'print' }[c[1]] || '');
+    if (/^\/(bio-english|resume-korean|resume)\/?$/.test(p)) to = '/about/';
+    if (/^\/(exhibition|portfolio_category\/exhibition)\/?/.test(p)) to = '/exhibitions/';
+    if (/^\/(press|blog-grid)\/?$/.test(p)) to = '/news/';
+    if (/^\/contact-us\/?$/.test(p)) to = '/contact/';
+    // 2026-11-15 제목을 받기 전 잠시 쓰던 작품 주소
+    var w = p.match(/^\/works\/([^\/]+)\/?$/);
+    var renamed = { 'untitled-2020-1': 'untitled-2020', 'untitled-2020-2': 'woman-sitting-2020', 'untitled-2014-1': 'youido-blues', 'untitled-2014-2': 'dohwa-woosung-apartment', 'untitled-1': 'a-giant-in-mapo', 'untitled-2': 'covid-19', 'waterfall-whale-and-puffin-watching-drawing': 'waterfall-whale-and-puffin-watching-lithograph' };
+    if (w && renamed[w[1]]) to = '/works/' + renamed[w[1]] + '/';
+    if (to) location.replace(base + to);
+  })();
+})();</script>
